@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Анкета</title>
+        <meta charset = 'utf-8'>
+        <style>
+            form {
+                background-color:aquamarine;
+                color: firebrick;
+                text-align: center;
+                width: 70%;
+                padding: 5px;
+                margin-left: calc(15% - 5px);
+            }
+            input[type="submit"] {
+                color: firebrick;
+                background-color: gold
+            }
+        </style>
+    </head>
+    <body>
+        <form method = "post" action = "cgi-bin/form.py" style = "text-align: center;">
+            <h2 style = "text-align: center">Анкета програміста</h2>
+            <p>Введіть своє прізвище та ім'я</p>
+            <input type = "text" name = "name" size = 30>
+            <input type = "text" name = "lastname" size = 30>
+            <p> Якими мовами програмування ви володієте? </p>
+            <p>
+                <input type = 'checkbox' name = 'checkbox' value = 'C'>
+                C
+                <input type = 'checkbox' name = 'checkbox' value = 'C++'>
+                C++
+                <input type = 'checkbox' name = 'checkbox' value = 'Java'>
+                Java
+                <input type = 'checkbox' name = 'checkbox' value = 'C#'>
+                C#
+                <input type = 'checkbox' name = 'checkbox' value = 'Python'>
+                Python
+                <input type = 'checkbox' name = 'checkbox' value = 'PHP'>
+                PHP
+                <input type = 'checkbox' name = 'checkbox' value = 'JavaScript'>
+                JavaScript
+                <input type = 'checkbox' name = 'checkbox' value = 'Ruby'>
+                Ruby 
+            </p>
+            <p>Якій операційній системі ви надаєте перевагу? </p>
+            <p>
+                <input name= 'OS' type = 'radio' value = 'Windows'>
+                Windows
+                <input name = 'OS' type = 'radio' value = 'Linux'>
+                Linux
+                <input name= 'OS' type = 'radio' value = 'MacOS'>
+                MacOS
+            </p>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
